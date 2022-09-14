@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="varios.css" type="text/css" media="screen">
+        <title>Formulario</title>        
+    </head>
+    <body>
+        <div class="principal">
+            <div class="panel">
+                <a href="principal.html"><img src="logo.png" alt="" class="logo"></a>
+                <a href="login.html" class="principales">Inicia Sesion</a>
+                <a href="cperfil.html" class="principales">Crear usuario</a>
+                <a href="mperfil.html" class="principales">Modificar usuario</a>
+                <a href="" class="principales">Soporte</a>
+                <a href="" class="principales">Lupita</a>
+            </div>
+            <div class="estructura">
+                <div class="form_container">
+                    <form>
+                        <div class="form_container_title">
+                            <p>MODIFICAR PERFIL</p>
+                        </div>
+                        <div class="form_container_data">                    
+                            <div class="form_label">              
+                                <label for="name">Nombre:</label>
+                                <div class="tooltip">*
+                                    <span class="tooltiptext">Campo obligatorio (no modificar si desea conservar los datos originales)</span>
+                                </div>
+                            </div>
+                            <div class="form_input">          
+                              <input type="text" id="name" name="name" value="Mi nombre">                
+                            </div>
+                        </div>
+                        <div class="form_container_data">
+                            <div class="form_label">
+                                <label for="surname">Apellido:</label>
+                                <div class="tooltip">*
+                                    <span class="tooltiptext">Campo obligatorio (no modificar si desea conservar los datos originales)</span>
+                                </div>                    
+                            </div>
+                            <div class="form_input" >
+                                <input type="text" id="surname" name="surname" value="Mi apellido"> 
+                            </div>    
+                        </div>
+                        <div class="form_container_data">
+                            <div class="form_label">
+                                <label for="date">Fecha de nacimiento:</label>
+                                <div class="tooltip">*
+                                    <span class="tooltiptext">Campo obligatorio (no modificar si desea conservar los datos originales)</span>
+                                </div>                    
+                            </div>
+                            <div class="form_input">
+                                <input type="date" id="date" name="date" value="2000-02-29" min="1900-01-01">
+                            </div> 
+                        </div>
+                        <div class="form_container_data">
+                            <div class="form_label">
+                                <label for="user_name">Nombre de usuario:</label>
+                                <div class="tooltip">*
+                                    <span class="tooltiptext">Campo obligatorio</span>
+                                </div>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" id="user_name" name="user_name" value="nombreDeUsuario">
+                            </div> 
+                        </div>
+                        <div class="form_container_data">
+                            <div class="form_label">
+                                <label for="email_1">Mail:</label>
+                                <div class="tooltip">*
+                                    <span class="tooltiptext">Campo obligatorio (no modificar si desea conservar los datos originales)</span>
+                                </div>                   
+                            </div>
+                            <div class="form_input">
+                                <input type="text" id="email_1" name="email_1" value="nombre@correo.com">
+                            </div> 
+                        </div>
+                        <div class="form_container_data">
+                            <div class="form_label">
+                                <label for="password_1">Contraseña:</label>
+                                <div class="tooltip">*
+                                    <span class="tooltiptext">Campo obligatorio (no modificar si desea conservar los datos originales)</span>
+                                </div>
+                            </div>
+                            <div class="form_input">   
+                                <input type="password" id="password_1" name="password_1" value="password">
+                            </div> 
+                        </div> 
+                        <div class="form_container_data">
+                            <div class="form_label"> 
+                                <label for="password_2">Contraseña repetida:</label>
+                                <div class="tooltip">*
+                                    <span class="tooltiptext">Campo obligatorio (no modificar si desea conservar los datos originales)</span>
+                                </div>
+                            </div>
+                            <div class="form_input">
+                                <input type="password" id="password_2" name="password_2" value="password"> 
+                            </div> 
+                        </div>
+        
+                        <!--
+                            Datos complementarios 
+                        -->
+                        
+                        <div class="form_container_data">
+                            <div class="form_label"> 
+                                <label for="country">Pais :</label>
+                            </div>
+                            <div class="form_input">
+                                <select>
+                                    <option value="0">Sin respuesta</option>
+                                    <option value="1">Argentina</option>
+                                    <option value="2">Brazil</option>
+                                    <option value="3">Bolivia</option>
+                                    <option value="4">Chile</option>
+                                    <option value="5">Colombia</option>
+                                    <option value="6">Ecuador</option>
+                                    <option value="7">Mexico</option>
+                                    <option value="8">Paraguay</option>
+                                    <option value="9">Peru</option>
+                                    <option value="10">Uruguay</option>
+                                    <option value="11">Venezuela</option>
+                                    <option value="12">Otro</option>
+                                </select>
+                            </div> 
+                        </div> 
+                        <div class="form_container_data">
+                            <div class="form_label"> 
+                                <label for="phone">Numero telefono/celular:</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="password" id="password_2" name="password_2" placeholder=""> 
+                            </div> 
+                        </div>                
+                        <div class="form_container_data">
+                            <div class="form_label"> 
+                                <label for="gender">Genero:</label>
+                            </div>
+                            <div class="form_input_radio">
+                                <div>
+                                <label for="gender_1">Hombre</label>
+                                <input type="radio" id="gender_1" name="gender" placeholder="" value="hombre">
+                                </div>
+                                <div>
+                                <label for="gender_2">Mujer</label>
+                                <input type="radio" id="gender_2" name="gender" placeholder="" value="mujer">
+                                </div>
+                                <div>
+                                <label for="gender_3">Otro</label>                        
+                                <input type="radio" id="gender_3" name="gender" placeholder="" value="otro">
+                                </div>
+                                <div>
+                                <label for="gender_4">No responder</label>                        
+                                <input type="radio" id="gender_4" name="gender" placeholder="" value="noResponder">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="form_container_data">
+                            <div class="form_label"> 
+                                <label for="phone">Ocupacion:</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="password" id="password_2" name="password_2" placeholder=""> 
+                            </div> 
+                        </div>                
+                        <div class="form_container_data">
+                            <div class="form_label"> 
+                                <label for="extra">Informacion adicional:</label>
+                            </div>
+                            <div class="form_input">
+                                <textarea id="extra" name="extra"></textarea>
+                            </div> 
+                        </div>
+        
+                           
+                        <!--
+                            Opciones para manipular informacion del formulario
+                        -->
+        
+        
+                        <div class="form_container_button">
+                            <div class="button">
+                                <input type="reset" value="Restablecer" id="reiniciarFormulario" onclick="confirm('¿Desea eliminar los datos escritos?')">
+                            </div>
+                            <div class="button">
+                                <input type="submit" value="Modificar" id="enviarFormulario">
+                            </div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+        
+    
+    </body>
+
+
+</html>
