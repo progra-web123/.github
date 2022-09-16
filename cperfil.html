@@ -1,26 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="varios.css">
-        <title>Speakof</title>
-    </head>
-    <body>
-        <div class="principal">
-            <div class="panel">
-                <a href="principal.html"><img src="logo.png" alt="" class="logo"></a>
-                <a href="login.html" class="principales">Inicia Sesion</a>
-                <a href="cperfil.html" class="principales">Crear usuario</a>
-                <a href="mperfil.html" class="principales">Modificar usuario</a>
-                <a href="" class="principales">Soporte</a>
-                <a href="" class="principales">Lupita</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="varios.css" type="text/css" media="screen">
+    <title>Cambiar perfil</title>
+    <link rel="icon" href="logo2.png">
+</head>
+<body>
+    <div class="principal">
+        <div class="panel">
+            <div class="panel1">
+                <a href="principal.html">
+                    <img src="logo.png" alt="logo" class="logo">
+                </a>
             </div>
-            <div class="estructura">
+            <div class="panell2">
+                <form action="" method="post" class="buscar">
+                    <p>
+                        <input type="search" class="buscar2" placeholder="Buscar en Speakof">
+                    </p>
+                </form>
+            </div>
+            <div class="panel3">
+                <a href="inicio.html" class="principales">Inicia Sesion</a>
+                <a href="" class="principales">Crear Usuario</a>
+            </div>
+        </div>
+        <div class="cuerpo">
+            <div class="paneliz">
+                <a href="" class="panel2">Explorar</a>
+                <a href="" class="panel2">Mensajes</a>
+                <a href="" class="panel2">Guardados</a>
+                <a href="" class="panel2">Perfil</a>
+                <ul class="menu">
+                    <li><a href="">Más opciones</a>
+                        <ul class="submenu">
+                            <li><a href="modificarperfil.html">Modificar Usuario</a></li>
+                            <li><a href="">Soporte</a></li>
+                            <li><a href="">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <a href="principal.html" class="panel2">Publicar</a>
+            </div>
+            <div class="panelmed">
                 <div class="form_container">
                     <form>
                         <div class="form_container_title">
@@ -103,28 +129,30 @@
                                 <input type="password" id="password_2" name="password_2" placeholder=""> 
                             </div> 
                         </div>                
-        
-        
+                
+                
                            
                         <div class="form_container_button">                    
-        
+                
                             <div class="button">
                                 <input type="reset" value="Borrar" id="reser_form" onclick="confirm('¿Desea eliminar los datos escritos?')">
                             </div>
                             <div class="button">
                                 <input type="submit" value="Registrar" id="submit_form">
                             </div>
-        
+                
                         </div>    
                     </form>
                 </div>
             </div>
+            <div class="panelder">
+                <div class="panelder2">
+                    <div class="noticias">Qué está pasando</div>
+                </div>
+            </div>
+
         </div>
         
-
-        
-    
-    </body>
-
-
+    </div>
+</body>
 </html>

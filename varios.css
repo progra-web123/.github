@@ -2,12 +2,10 @@
 div.form_container{
     min-width: 600px;
     height: 100%;
-    background-color: rgb(28, 101, 184);
     padding: 20px;
-    position: relative;
 }
 div.form_container_title{
-    height: auto;
+    height: 100%;
     width: auto;
     margin: 35px 5% 35px 5%;
     padding: 2px 2px 2px 2px;
@@ -134,32 +132,235 @@ div.tooltip span.tooltiptext {
 div.tooltip:hover span.tooltiptext {
     visibility: visible;
 }
-.cuadro {
-    background-color: white;
-    position: left;
-    width: 10vh;
-    height: 5vh;
+* {
+    margin: 0px;
+    padding: 0px;
 }
-
 .principal {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
+    background-color: black;
+    background-size: 100%;
 }
+
 .panel {
-    background-color: white;
     width: 100%;
     display: flex;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid grey;
+}
+.panel1 {  /*panel izquierdo encabezado */
+    width: 30%;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    border-right: 1px solid grey;
+}
+.panell2 {
+    width: 40%;
+    background-color: black;
+    height: 100%;
+    position: sticky;
+    display: flex;
+    height: 7.1vh;
+    justify-content: center;
+    
+    border-right: 1px solid grey;
+}
+.panell2 >a {
+    color:white;
+}
+.panel3 {
+    width: 30%;
+    display: flex;
     justify-content: space-evenly;
+    background-color: black;
+    
+}
+.panel3 a {
+    color: white;
+    display: flex;
     align-items: center;
 }
 .principales {
+    display: flex;
     text-decoration: none;
     color: blue;
 }
 .logo {
     width: 8rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px px grey;
 }
-* {
-    margin: 0px;
-    padding: 0px;
+.paneliz {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:30%;
+    border-right: 1px solid grey;
+    height: 100%;
+}
+.panel2 {
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    
+}
+.panelmed {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: black;
+    height: 20vh;
+
+}
+.cuerpo {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height:100vh;
+}
+.panelder {
+    display: flex;
+    width: 30%;
+    border-left: 1px solid grey;
+    height: 100vh;
+
+}
+.panelder2 {
+    margin: 5px;
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    background-color: rgba(128, 128, 128, 0.233);
+    border-radius: 5%;
+    
+}
+.noticias {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.perfil {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    
+}
+input {
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: 100;
+}
+.escribir {
+    display: flex;
+    width:80%;
+    height: 100%;
+}
+.foto {
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+}
+.encabezado {
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    justify-content: space space-evenly;
+    width: 100%;
+    height: 80%;
+}
+.boton {
+    background-color: white;
+    text-align: center;
+    float: right;
+    align-items: center;
+    font-weight: 600;
+    display: flex;
+    color: blue;
+    height: 100%;
+    width: 13%;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.publicar {
+    padding: 10px 10px;
+    height: 20%;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+}
+.menu ul {
+    list-style: none;
+}
+.menu>li {
+    display: inline-block;
+}
+.menu>li>a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.menu>li>a:hover {
+    color: white;
+    transition: all .3s;
+}
+.submenu {
+    position: absolute;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 30px grey;
+}
+.submenu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+.submenu li:hover {
+    background-color: grey;
+    transition: all .3s;
+}
+a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.panel2:hover {
+    transition: all .5s;
+}
+p {
+    color: white;
+}
+.buscar {/* sin terminar, ver buscador */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.buscar2 {
+    width: 65vh;
+    height: 100%;
+    border-radius: 25px;
+    font-size: 15px;
+    padding-left: 50px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+.buscar2:focus {
+    outline: 1.8px solid rgba(13, 102, 218, 0.993);
+    background-color: black;
 }

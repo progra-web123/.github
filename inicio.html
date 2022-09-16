@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="principal.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="varios.css" type="text/css" media="screen">
     <title>Speakof</title>
     <link rel="icon" href="logo2.png">
 </head>
@@ -47,18 +47,45 @@
                 <a href="principal.html" class="panel2">Publicar</a>
             </div>
             <div class="panelmed">
-                <div class="encabezado">
-                    <div class="perfil">
-                        <a href=""> <!-- referenciarlo al perfil -->
-                            <img src="perfil.jfif" alt="foton" class="foto">
-                        </a>
-                    </div>
-                    <div class="escribir">
-                        <input type="text" placeholder="¿Qué está pasando?" size="70">
-                    </div>
-                </div>
-                <div class="publicar">
-                    <a href="" class="boton">Publicar</a>
+                <div class="form_container">
+            
+                    <form>
+                        <div class="form_container_title">
+                            <p>INICIAR SESION</p>
+                        </div>
+                        <div class="form_container_data">                    
+                            <div class="form_label">              
+                                <label for="name">Mail:</label>
+                
+                            </div>
+                            <div class="form_input">          
+                              <input type="text" id="name" name="name" >                
+                            </div>
+                        </div>
+                        <div class="form_container_data">
+                            <div class="form_label">
+                                <label for="password_1">Contraseña:</label>
+                            </div>
+                            <div class="form_input">   
+                                <input type="password" id="password_1" name="password_1" placeholder="">
+                            </div> 
+                        </div> 
+                
+                
+                        <!--
+                            Opciones para manipular informacion del formulario
+                        -->
+                
+                
+                        <div class="form_container_button">
+                            <div class="button">
+                                <input type="button" value="recuperar" id="resetForm">
+                            </div>
+                            <div class="button">
+                                <input type="submit" value="modificar" id="sentForm">
+                            </div>
+                        </div>    
+                    </form>
                 </div>
             </div>
             <div class="panelder">
