@@ -15,6 +15,7 @@
     position: sticky;
     top: 0px;
     border-bottom: 1px solid grey;
+    z-index: 5;
 }
 .panel1 {  /*panel izquierdo encabezado */
     width: 30%;
@@ -29,7 +30,7 @@
     background-color: black;
     height: 100%;
     display: flex;
-    height: 7.1vh;
+    height: 8.2vh;
     justify-content: center;
     
     border-right: 1px solid grey;
@@ -80,8 +81,13 @@
     flex-direction: column;
     width: 40%;
     background-color: black;
-    height: 20vh;
+    height: 100%;
 
+}
+.panelmed2 {
+    position: relative;
+    height: 55%;
+    border-bottom: 1px solid grey;
 }
 .cuerpo {
     display: flex;
@@ -104,6 +110,72 @@
     background-color: rgba(128, 128, 128, 0.233);
     border-radius: 5%;
     
+}
+.portada {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: black;  
+    position: relative;
+    z-index: 2;    
+}
+.fotoportada {
+    width: 100%;
+    height: 100%;
+    align-self: center; 
+    size-adjust: auto;   
+}
+.fperfil {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    z-index: 4;
+    top: 45%;
+    display: block;
+    left: 3%; 
+}
+.fotoperfil {
+    width: 100%;
+    height: 100%;
+    align-self: center; 
+    size-adjust: auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+}
+.botonSeguir {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    float: right;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    top: 80%;
+    right: 5%; 
+    display: flex;
+    height: 12%;
+    width: 26%;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    justify-content: center;
+}
+.usuario {
+    padding: 20px 10px 0px 20px;
+    width: 100%;
+    height: 14%;
+}
+.nombreusuario {
+    color: white;
+    font-size: 160%;
+}
+.idusuario {
+    text-decoration: none;
+}
+.informacion {
+    padding: 0px 10px 0px 20px;
+}
+.descripcion {
+    font-size: 16px;
 }
 .noticias {
     width: 100%;
@@ -132,13 +204,6 @@ input {
     width: 90%;
     height: 100%;
     border-radius: 50%;
-}
-.encabezado {
-    padding: 20px 10px 10px 10px;
-    display: flex;
-    justify-content: space space-evenly;
-    width: 100%;
-    height: 80%;
 }
 .boton {
     background-color: white;
