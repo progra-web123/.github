@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 25%;
+    border-radius: 20px;
+}
+p {
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+input {  /* Inicio de edicion del input */
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    padding-left: 40px;
+    background-color: rgba(128, 128, 128, 0.507);
+    border: 0;
+}
+input:hover {
+    background-color: black;
+}
+input:focus {
+    background-color: black;
+    outline: 1px solid blue;
+    color: white;  
+}       /* Fin de edicion del input */
+
+.encabezado {  /* Inicio del encabezado */
+    display: inline-flex;
+    width: 100%;    
+    background-color: black;
+    height: 5vh;
+    position:sticky;
+    top:0;
+}
+.enc1 {
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-right: 1px solid grey;
+}
+.enc2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-right: 1px solid grey;
+}
+.enc3 {
+    width: 25%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}  /* Fin del encabezado */
+
+.cuerpo {  
+    display: inline-flex;
+    width: 100%;
+    height: 200vh;
+    background-color: black;
+}
+.panelizq {  /* Inicio del panel izquierdo */
+    width: 25%;
+}
+.panelizq li a {
+    display: block;
+    border-radius: 21px;
+    padding: 15px;
+}
+.panelizq li a:hover {
+    background-color: rgb(58, 7, 7);
+    transition: all .3s;
+}
+.submenu {
+    width: 25%;
+    position: absolute;
+    transition: opacity 1.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.submenu li a{
+    display: block;
+}
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+.menu {
+    align-items: center;
+    text-align: center;
+}           /* Fin del panel izquierdo */
+.panelmed {     /* Inicio del panel medio */
+    width: 50%;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.publicar {
+    width: 100%;
+    background-color: red;
+    height: 18vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.publicarfoto {
+    width: 18%;
+    height: 100%;
+    background-color: blue;
+}
+.publicarinterfaz {
+    background-color: rgb(0, 255, 128);
+    width: 85%;
+    height: 100%;
+    display: flexbox;
+
+}
+.publicartexto {
+    width: 100%;
+    height: 90%;
+}
+.publicartexto input {
+    height: 90%;
+    width: 70%;
+}
+.publicarenviar {
+    background-color: blue;
+    float: right;
+    height: 10%;
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+}           /* Fin del panel medio */
+.panelder {  /* Inicio de panel derecho */
+    width: 25%;
+    height: 50vh;
+    display: flex;
+}
+.sugerencias {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 0 0 0 ;
+}       /* Fin del panel derecho */
